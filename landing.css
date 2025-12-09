@@ -1,5 +1,6 @@
 :root {
     --seasalt: #f8fafc;
+    --white: #ffffff;
     --keppel: #5da399;
     --gunmetal: #263D42;
     --flame: #cf5c36;
@@ -20,6 +21,8 @@
     --tobacco-dark: #5f1116;
     --ochre: #D17B0F; /* Orginal landing design */
     --muted: #475569; /* Orginal landing design */
+    --dusk-blue: #3f5c94;
+    --border: #e2e8f0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 }
 
@@ -38,11 +41,21 @@ body {
     padding: 0;
     width: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--seasalt);
+}
+
+body.home {
     background-image: url('./top-tile.png');
     background-repeat: repeat-x;
     background-position: top;
-    background-color: var(--seasalt);
-    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--gunmetal);
 }
 h2 {
     font-size: 1.6rem;
@@ -52,9 +65,62 @@ h2 {
 p {
     font-size: 1rem;
 }
- a {
-    color: var(--burst-1);
- }
+
+a {
+color: var(--dusk-blue);
+}
+
+/* For internal pages with sticky header */
+header {
+    background-color: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+main {
+    padding: 2rem 0 3rem;
+}
+
+.nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .brand {
+    font-family: 'Special Elite', 'Inter', sans-serif;
+    font-size: 1.25rem;
+    color: var(--evergreen);
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+  .brand a {
+    color: var(--gunmetal);
+    text-decoration: none;
+  }
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+  }
+  
+  .nav-links a {
+    padding: 0.35rem 0.6rem;
+    border-radius: 0.375rem;
+    color: var(--text);
+  }
+  
+  .nav-links a:hover {
+    background: var(--bg);
+    color: var(--evergreen);
+  }
 /* Hero Section */
 .hero {
     background: linear-gradient(180deg, #fff  0%, var(--seasalt) 100%);
@@ -68,9 +134,6 @@ p {
 
 .hero h1 {
     font-size: 3rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    color: var(--gunmetal);
     font-family: 'Special Elite', cursive;
 }
 
@@ -264,7 +327,7 @@ p {
 /* Vision Section */
 .vision {
     padding: 4rem 0;
-    background: linear-gradient(180deg, var(--burst-1) 0%, var(--tobacco-dark) 100%);
+    background: linear-gradient(180deg, var(--dusk-blue) 0%, var(--concrete) 100%);
     color: white;
     text-align: center;
 }
@@ -358,7 +421,7 @@ p {
 
 /* Container adjustments */
 .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 1rem;
     width: 100%;
@@ -408,90 +471,9 @@ footer {
     }
 }
 
-/* @media (max-width: 768px) {
-    .container {
-        padding: 0 1.5rem;
-    }
-    
-    .hero h1 {
-        font-size: 2.25rem;
-    }
-    
-    .hero .subtitle {
-        font-size: 1.1rem;
-    }
-
-    .problem-grid,
-    .features {
-        grid-template-columns: 1fr;
-    }
-    
-    .email-form {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .email-form input[type="email"] {
-        min-width: 100%;
-    }
-} */
-
-/* @media (max-width: 480px) {
-    .container {
-        padding: 0 1rem;
-    }
-    
-    .hero {
-        padding: 1.5rem 0 0 0;
-    }
-    
-    .hero h1 {
-        font-size: 1.8rem;
-    }
-    
-    .hero .tagline {
-        font-size: 1rem;
-    }
-    
-    .hero .subtitle {
-        font-size: 1rem;
-    }
-    
-    .problem-item {
-        padding: 1.5rem;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .problem-item .icon {
-        margin-bottom: 1rem;
-        margin-top: 0;
-    }
-    
-    .problem-item h3,
-    .problem-item p {
-        text-align: center;
-    }
-    
-    .feature {
-        padding: 1.5rem;
-    }
-    
-    .solution,
-    .vision,
-    .cta {
-        padding: 3rem 0;
-    }
-} */
-
 /* Remove default margins on sections */
 section {
     padding: 2rem 1.25rem;
-}
-
-/* Clean up Pico defaults for better spacing */
-main {
-    padding: 0;
 }
 
 /* Reset browser defaults */
