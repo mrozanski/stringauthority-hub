@@ -22,6 +22,8 @@
     --ochre: #D17B0F; /* Orginal landing design */
     --muted: #475569; /* Orginal landing design */
     --dusk-blue: #3f5c94;
+    --baltic-blue: #1A659E;
+    --copper: #C84630;
     --border: #e2e8f0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 }
@@ -139,7 +141,7 @@ main {
 
 .hero .tagline { 
     font-size: 1.35rem;
-    color: var(--ochre);
+    color: var(--baltic-blue);
     margin: 0 0 0.75rem;
     font-weight: 600;    
 }
