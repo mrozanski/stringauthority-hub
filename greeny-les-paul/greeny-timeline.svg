@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f8fafc;">
+  
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <text x="600" y="30" font-size="26" font-weight="bold" fill="#1e293b" text-anchor="middle" letter-spacing="1">TIMELINE OF GREENY'S JOURNEY</text>
+  
+  <polygon points="50,175 150,175 170,200 150,225 50,225" fill="#6A9BC2" stroke="#fff" stroke-width="2"/>
+
+  <polygon points="150,175 300,175 320,200 300,225 150,225 170,200" fill="#3f5c94" stroke="#fff" stroke-width="2"/>
+  <text x="235" y="205" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Peter Green Era</text>
+
+  <polygon points="300,175 830,175 850,200 830,225 300,225 320,200" fill="#3f5c94" stroke="#fff" stroke-width="2"/>
+  <text x="565" y="205" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Gary Moore Era</text>
+
+  <polygon points="830,175 965,175 985,200 965,225 830,225 850,200" fill="#6A9BC2" stroke="#fff" stroke-width="2"/>
+  <text x="905" y="205" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Collector Era</text>
+
+  <polygon points="965,175 1130,175 1150,200 1130,225 965,225 985,200" fill="#3f5c94" stroke="#fff" stroke-width="2"/>
+  <text x="1055" y="205" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Hammett Era</text>
+
+
+  <g transform="translate(60, 0)">
+    <line x1="0" y1="175" x2="0" y2="90" stroke="#3f5c94" stroke-width="2"/>
+    <text x="0" y="80" font-size="14" fill="#64748b" text-anchor="middle">Manufactured</text>
+    <line x1="0" y1="225" x2="0" y2="280" stroke="#6A9BC2" stroke-width="2"/>
+    <circle cx="0" cy="280" r="28" fill="#6A9BC2" filter="url(#shadow)"/>
+    <text x="0" y="285" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">1959</text>
+  </g>
+
+  <g transform="translate(170, 0)">
+    <line x1="0" y1="175" x2="0" y2="130" stroke="#3f5c94" stroke-width="2"/>
+    <text x="0" y="120" font-size="14" fill="#64748b" text-anchor="middle">Acquired in London</text>
+    
+    <line x1="0" y1="225" x2="0" y2="280" stroke="#3f5c94" stroke-width="2"/>
+    <circle cx="0" cy="280" r="28" fill="#3f5c94" filter="url(#shadow)"/>
+    <text x="0" y="285" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">1965</text>
+  </g>
+
+  <g transform="translate(320, 0)">
+    <line x1="0" y1="175" x2="0" y2="90" stroke="#3f5c94" stroke-width="2"/>
+    <text x="0" y="80" font-size="14" fill="#64748b" text-anchor="middle">Purchased for ~£100</text>
+    
+    <line x1="0" y1="225" x2="0" y2="280" stroke="#3f5c94" stroke-width="2"/>
+    <circle cx="0" cy="280" r="28" fill="#3f5c94" filter="url(#shadow)"/>
+    <text x="0" y="285" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">1974</text>
+  </g>
+
+  <g transform="translate(850, 0)">
+    <line x1="0" y1="175" x2="0" y2="130" stroke="#6A9BC2" stroke-width="2"/>
+    <text x="0" y="120" font-size="14" fill="#64748b" text-anchor="middle">Moore Sells ($750k+)</text>
+    
+    <line x1="0" y1="225" x2="0" y2="280" stroke="#6A9BC2" stroke-width="2"/>
+    <circle cx="0" cy="280" r="28" fill="#6A9BC2" filter="url(#shadow)"/>
+    <text x="0" y="285" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">2006</text>
+  </g>
+
+  <g transform="translate(985, 0)">
+    <line x1="0" y1="175" x2="0" y2="90" stroke="#3f5c94" stroke-width="2"/>
+    <text x="0" y="80" font-size="14" fill="#64748b" text-anchor="middle">Acquired (~$2M rumored)</text>
+    
+    <line x1="0" y1="225" x2="0" y2="280" stroke="#3f5c94" stroke-width="2"/>
+    <circle cx="0" cy="280" r="28" fill="#3f5c94" filter="url(#shadow)"/>
+    <text x="0" y="285" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">2014</text>
+  </g>
+  
+  <g transform="translate(1130, 0)">
+    <line x1="0" y1="225" x2="0" y2="280" stroke="#3f5c94" stroke-width="2"/>
+    <circle cx="0" cy="280" r="28" fill="#3f5c94" filter="url(#shadow)"/>
+    <text x="0" y="285" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">2025</text>
+  </g>
+
+</svg>
