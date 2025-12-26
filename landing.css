@@ -426,10 +426,39 @@ footer {
     margin: 0 0 1.5rem 1.5rem;
 }
 
+/* When article-illustration is inside a figure, float the figure instead */
+figure:has(.article-illustration) {
+    float: right;
+    width: 400px;
+    max-width: 100%;
+    margin: 0 0 1.5rem 1.5rem;
+}
+
+figure:has(.article-illustration) .article-illustration {
+    float: none;
+    width: 100%;
+    margin: 0;
+}
+
+figure:has(.article-illustration) figcaption {
+    clear: both;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+    line-height: 1.4;
+}
+
 @media (max-width: 820px) {
     .article-illustration {
         float: none;
         display: block;
+        width: 100%;
+        max-width: 525px;
+        margin: 0 auto 1.5rem;
+    }
+    
+    figure:has(.article-illustration) {
+        float: none;
         width: 100%;
         max-width: 525px;
         margin: 0 auto 1.5rem;
