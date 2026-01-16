@@ -170,6 +170,10 @@ main {
     margin: 0 auto;
     line-height: 1.6;
 }
+.rounded {
+    border-radius: 0.25rem;
+}
+
 .hero-image {
     max-width: 64%;
     width: 1000px;
