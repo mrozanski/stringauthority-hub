@@ -521,3 +521,63 @@ ul.grid {
     padding: 0;
     padding-inline-start: 0;
 }
+
+/* NAMM page intro section with profile picture */
+.namm-intro {
+    position: relative;
+}
+
+.namm-intro .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 6px 10px -1px rgb(0 0 0 / 0.22);
+}
+
+/* Above 820px: two columns - image left, text right with 2rem gap */
+@media (min-width: 821px) {
+    .namm-intro {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        column-gap: 2rem;
+    }
+    
+    .namm-intro .profile-pic {
+        flex-shrink: 0;
+        margin: 0;
+    }
+    
+    .namm-intro-text {
+        flex: 1;
+        min-width: 0;
+    }
+    
+    .namm-intro-text h1,
+    .namm-intro-text p {
+        text-align: left;
+    }
+    
+    .namm-intro > hr {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+/* Below 820px: center-aligned, order: image, h1, p */
+@media (max-width: 820px) {
+    .namm-intro {
+        text-align: center;
+    }
+    
+    .namm-intro .profile-pic {
+        margin: 0 auto 1.5rem;
+    }
+    
+    .namm-intro-text h1,
+    .namm-intro-text p {
+        text-align: center;
+    }
+}
